@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
 	}
 
 	public getPosts(event?: PageEvent) {
-		this.postService.getPerPage(this.pageSize, event.pageIndex).subscribe( data => {
+		this.postService.getPerPage(this.pageSize, event.pageIndex + 1).subscribe( data => {
 			this.posts = data;
 			window.scroll(0,0);
 		});

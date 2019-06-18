@@ -1,0 +1,29 @@
+<div class="app-post">
+
+	<mat-card class="post-container">
+		<mat-card-header>
+			<mat-card-title>{{post.title}}</mat-card-title>
+			<mat-card-subtitle>Created {{post.createdAt | date : 'short' }}</mat-card-subtitle>
+			<mat-card-subtitle>Updated {{post.updatedAt | date : 'short'}}</mat-card-subtitle>
+			<mat-card-subtitle *ngIf="post.tags"><i class="material-icons">
+				loyalty
+			</i>
+				<span class="tag">{{post.tags}}</span>
+			</mat-card-subtitle>
+
+			<span class="example-fill-remaining-space"></span>
+			<div layout-align="end center">
+				<app-author [authorUri]="post.author"></app-author>
+			</div>
+		</mat-card-header>
+		<mat-card-content cl class="content">
+			<img  src="{{post_image_url}}{{ post.image }}" alt="" width="200" height="100%">
+
+			<p>
+				{{post.body}}
+			</p>
+		</mat-card-content>
+
+	</mat-card>
+
+</div>

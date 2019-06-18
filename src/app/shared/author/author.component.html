@@ -1,0 +1,17 @@
+<div class="app-author">
+
+
+	<div class="avatar-container">
+		<div class="avatar" *ngIf="author?.avatar">
+			<img width="50" height="50" src="{{avatar_endpoint}}{{author.avatar}}" alt="{{author.avatar}}">
+
+		</div>
+		<div>
+			<div class="name">{{ author?.name }}</div>
+			<div class="role">{{ author?.role }}</div>
+			<div class="position">{{ author?.location }}</div>
+
+		</div>
+	</div>
+
+</div>

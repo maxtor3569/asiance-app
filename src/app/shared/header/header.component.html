@@ -1,0 +1,26 @@
+<div class="app-header">
+
+	<div class="header">
+
+		<div class="logo">THE BLOG</div>
+
+		<nav mat-tab-nav-bar mat-align-tabs="center">
+
+			<a mat-tab-link
+			   [routerLink]="'/'"
+			   routerLinkActive #rla="routerLinkActive"
+			   [active]="rla.isActive">
+				Posts
+			</a>
+			<a mat-tab-link
+			   [routerLink]="'/about-us'"
+			   routerLinkActive #rla1="routerLinkActive"
+			   [active]="rla1.isActive">
+				About us
+			</a>
+		</nav>
+
+
+	</div>
+
+</div>

@@ -1,0 +1,12 @@
+<div class="app-home">
+
+    <app-posts [posts]="posts" [routerLink]="'/about-us'"></app-posts>
+
+    <mat-paginator [length]="length"
+                   [pageSize]="pageSize"
+                   [pageSizeOptions]="pageSizeOptions"
+                   (page)="pageEvent = getPosts($event)"
+
+    >
+    </mat-paginator>
+</div>

@@ -2,7 +2,7 @@
   "name": "asiance-app",
   "version": "0.0.0",
   "engines": {
-	"node": "8.12.0",
+	"node": "11.3.0",
 	"npm": "6.9.0"
   },
   "scripts": {

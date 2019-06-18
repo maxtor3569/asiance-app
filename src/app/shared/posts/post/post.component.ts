@@ -15,7 +15,6 @@ export class PostComponent implements OnInit {
 	constructor() {
 	}
 
-	value: number;
 
 	ngOnInit() {
 	}

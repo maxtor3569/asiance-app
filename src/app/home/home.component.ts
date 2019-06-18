@@ -11,7 +11,7 @@ import {PostService} from '../core/services';
 export class HomeComponent implements OnInit {
 
 
-	public pageEvent: PageEvent;
+	public pageEvent;
 	public length;
 	public pageSize = 5;
 
